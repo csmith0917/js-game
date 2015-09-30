@@ -1,4 +1,5 @@
 $(function(){
+	// start game
 	function slowFade (element) {
 		$(element).delay(300).fadeIn("slow");
 	}
@@ -27,6 +28,33 @@ $(function(){
 	$('.start-game #ready').click(function() {
 	  $('.story-block').html(alley);
 	});
+
+	// in the alley
+	var option1Choice = Math.random();
+	var option2Choice = Math.random();
+	$(document).on('click','#alley-encounter .options .choice1',function(){
+		if (option1Choice <= .5) {
+			console.log(option1Choice);
+			console.log("you die");
+		} else {
+			console.log(option1Choice);
+			console.log("you live");
+		}
+	});
+	$(document).on('click','#alley-encounter .options .choice2',function(){
+		if (option1Choice <= .5) {
+			console.log(option1Choice);
+			console.log("you still die");
+		} else {
+			console.log(option1Choice);
+			console.log("smart, you live");
+		}
+	});
+
+
+
+
+
 });
 
 
