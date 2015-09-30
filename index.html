@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Come Play</title>
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/game.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div id="page1">
+			<div class="intro">
+				<h1>Welcome Traveler</h1>
+				<p>I want to play a game. Would you like to play?</p>
+				<button id="yes-button">I'll play</button> <button id="no-button">no</button>
+			</div>
+
+			<div id="get-player-name">
+				<p>Will you share your name with me?</p>
+				<form id="player-name">
+					<input id="userName" name="userName" type="text" />
+					<input type="button" id="submit" value="Let's play"/>
+				</form>
+			</div>
+			<div id="welcome-player">
+				<p>Welcome <span class="player"></span></p>
+			</div>
+			<div class="game-rules">
+				<p>Our game is simple. I am a serial killer. You are my next victim. As the game progresses, you will be presented with choices. Make the right choices and you live. Make the wrong choices, and you die.</p>
+			</div>
+			<div class="start-game">
+				<p>Are you ready?</p>
+				<button id="ready">Yes</button> <button id="quit">No</button>
+			</div>
+		</div>
+	</div>
+
+	<div class="refusal"><h1>Fine then. Goodbye</h1></div>
+</body>
+</html>

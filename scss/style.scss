@@ -1,0 +1,20 @@
+@import 'mixins';
+html {
+	font-family: verdana;
+}
+#get-player-name {
+	@include hide;
+}
+#welcome-player {
+	@include hide;
+}
+.game-rules {
+	@include hide;
+}
+.start-game {
+	@include hide;
+}
+
+.refusal {
+	@include hide;
+}
