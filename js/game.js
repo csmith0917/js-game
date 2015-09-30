@@ -1,12 +1,16 @@
 $(function(){
 
+	function slowFade (element) {
+		$(element).delay(300).fadeIn("slow");
+	}
+
 	$('#yes-button').click(function() {
 	  $('.intro').fadeOut(300);
-	  $('#get-player-name').delay(300).fadeIn("slow");
+	  slowFade('#get-player-name');
 	});
 	$('#no-button').click(function() {
 	  $('.wrapper').fadeOut(300);
-	  $('.refusal').delay(300).fadeIn("slow");
+	  slowFade('.refusal');
 	});
 
 	$('#player-name #submit').click(function() {
@@ -16,7 +20,7 @@ $(function(){
 	  };
 	  $('#get-player-name').fadeOut( 300 );
 	  $('#welcome-player span').text(name);
-	  $('#welcome-player').delay(300).fadeIn("slow");
+	  slowFade('#welcome-player');
 	  $('.game-rules').delay(800).fadeIn("slow");
 	  $('.start-game').delay(2200).fadeIn("slow");
 	});

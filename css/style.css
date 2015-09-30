@@ -1,0 +1,19 @@
+html {
+  font-family: verdana; }
+
+#get-player-name {
+  display: none; }
+
+#welcome-player {
+  display: none; }
+
+.game-rules {
+  display: none; }
+
+.start-game {
+  display: none; }
+
+.refusal {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */
