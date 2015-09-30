@@ -34,27 +34,18 @@ $(function(){
 	var option2Choice = Math.random();
 	$(document).on('click','#alley-encounter .options .choice1',function(){
 		if (option1Choice <= .5) {
-			console.log(option1Choice);
-			console.log("you die");
+			$('.story-block').html(alleyTurnAroundLive);
 		} else {
-			console.log(option1Choice);
-			console.log("you live");
+			$('.story-block').html(alleyTurnAroundDie);
 		}
 	});
 	$(document).on('click','#alley-encounter .options .choice2',function(){
 		if (option1Choice <= .5) {
-			console.log(option1Choice);
-			console.log("you still die");
+			$('.story-block').html(alleyWalkFasterLive);
 		} else {
-			console.log(option1Choice);
-			console.log("smart, you live");
+			$('.story-block').html(alleyWalkFasterDie);
 		}
 	});
-
-
-
-
-
 });
 
 
