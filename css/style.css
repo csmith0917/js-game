@@ -1,15 +1,32 @@
+@font-face {
+  font-family: '28days';
+  src: url("../fonts/28days.ttf"); }
+html {
+  font-size: 62.5%; }
+
 body {
   background-color: #000000;
+  background-image: url(../img/opening.jpg);
+  background-size: cover;
   color: #f7fafc; }
+  body h1 {
+    font-size: 8rem;
+    font-family: '28days'; }
 
-.wrapper #game-intro #get-player-name {
-  display: none; }
-.wrapper #game-intro #welcome-player {
-  display: none; }
-.wrapper #game-intro .game-rules {
-  display: none; }
-.wrapper #game-intro .start-game {
-  display: none; }
+.wrapper .story-block {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 26px 10px 93px 16px rgba(0, 0, 0, 0.75);
+  width: 75%;
+  margin: 0 auto;
+  text-align: center; }
+  .wrapper .story-block #game-intro #get-player-name {
+    display: none; }
+  .wrapper .story-block #game-intro #welcome-player {
+    display: none; }
+  .wrapper .story-block #game-intro .game-rules {
+    display: none; }
+  .wrapper .story-block #game-intro .start-game {
+    display: none; }
 
 #refusal {
   display: none; }
