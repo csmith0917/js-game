@@ -1,5 +1,4 @@
 $(function(){
-
 	function slowFade (element) {
 		$(element).delay(300).fadeIn("slow");
 	}
@@ -26,6 +25,19 @@ $(function(){
 	});
 
 	$('.start-game #ready').click(function() {
-	  
+	  $('.story-block').html(alley);
 	});
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
