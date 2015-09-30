@@ -1,19 +1,17 @@
-html {
-  font-family: verdana; }
+body {
+  background-color: #000000;
+  color: #f7fafc; }
 
-#get-player-name {
+.wrapper #game-intro #get-player-name {
+  display: none; }
+.wrapper #game-intro #welcome-player {
+  display: none; }
+.wrapper #game-intro .game-rules {
+  display: none; }
+.wrapper #game-intro .start-game {
   display: none; }
 
-#welcome-player {
-  display: none; }
-
-.game-rules {
-  display: none; }
-
-.start-game {
-  display: none; }
-
-.refusal {
+#refusal {
   display: none; }
 
 /*# sourceMappingURL=style.css.map */

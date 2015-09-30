@@ -10,7 +10,7 @@ $(function(){
 	});
 	$('#no-button').click(function() {
 	  $('.wrapper').fadeOut(300);
-	  slowFade('.refusal');
+	  slowFade('#refusal');
 	});
 
 	$('#player-name #submit').click(function() {
