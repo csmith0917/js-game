@@ -3,7 +3,7 @@
 @import 'mixins';
 
 html {
-	font-size: 62.5%;
+	font-size: 100%;
 }
 
 body {
@@ -12,8 +12,14 @@ body {
 	background-size: cover;
 	color: $text;
 	h1 {
-		font-size: 8rem;
-		font-family: '28days';
+		font: {
+			family: '28days';
+			size: 8rem;
+		}
+		margin: 0;
+	}
+	h2 {
+
 	}
 }
 
@@ -22,7 +28,7 @@ body {
 	.story-block {
 		background-color: rgba(0,0,0,0.3);
 		box-shadow:26px 10px 93px 16px rgba(0,0,0,0.75);
-		width: 75%;
+		width: 90%;
 		margin: 0 auto;
 		text-align: center;
 		#game-intro {

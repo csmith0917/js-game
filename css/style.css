@@ -2,7 +2,7 @@
   font-family: '28days';
   src: url("../fonts/28days.ttf"); }
 html {
-  font-size: 62.5%; }
+  font-size: 100%; }
 
 body {
   background-color: #000000;
@@ -10,13 +10,14 @@ body {
   background-size: cover;
   color: #f7fafc; }
   body h1 {
+    font-family: '28days';
     font-size: 8rem;
-    font-family: '28days'; }
+    margin: 0; }
 
 .wrapper .story-block {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 26px 10px 93px 16px rgba(0, 0, 0, 0.75);
-  width: 75%;
+  width: 90%;
   margin: 0 auto;
   text-align: center; }
   .wrapper .story-block #game-intro #get-player-name {
