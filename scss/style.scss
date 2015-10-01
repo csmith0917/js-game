@@ -3,7 +3,10 @@
 @import 'mixins';
 
 html {
-	font-size: 100%;
+	font: {
+		family: verdana;
+		size: 18px;
+	}
 }
 
 body {
@@ -13,21 +16,25 @@ body {
 	color: $text;
 	h1 {
 		font: {
-			family: '28days';
-			size: 8rem;
+			family: $headerFont;
+			size: 125px;
 		}
 		margin: 0;
+		@include text-shadow;
 	}
 	h2 {
-
+		font: {
+			family: $detailFont;
+			size: 30px;
+		}
+		@include text-shadow;
 	}
 }
 
 
 .wrapper {
+	margin-top: 50px;
 	.story-block {
-		background-color: rgba(0,0,0,0.3);
-		box-shadow:26px 10px 93px 16px rgba(0,0,0,0.75);
 		width: 90%;
 		margin: 0 auto;
 		text-align: center;

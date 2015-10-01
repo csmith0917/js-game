@@ -1,8 +1,12 @@
 @font-face {
   font-family: '28days';
   src: url("../fonts/28days.ttf"); }
+@font-face {
+  font-family: "JustDieAlready";
+  src: url("../fonts/JustDieAlready.ttf"); }
 html {
-  font-size: 100%; }
+  font-family: verdana;
+  font-size: 18px; }
 
 body {
   background-color: #000000;
@@ -10,24 +14,29 @@ body {
   background-size: cover;
   color: #f7fafc; }
   body h1 {
-    font-family: '28days';
-    font-size: 8rem;
-    margin: 0; }
+    font-family: "28days";
+    font-size: 125px;
+    margin: 0;
+    text-shadow: 10px 10px 20px #000000; }
+  body h2 {
+    font-family: "JustDieAlready";
+    font-size: 30px;
+    text-shadow: 10px 10px 20px #000000; }
 
-.wrapper .story-block {
-  background-color: rgba(0, 0, 0, 0.3);
-  box-shadow: 26px 10px 93px 16px rgba(0, 0, 0, 0.75);
-  width: 90%;
-  margin: 0 auto;
-  text-align: center; }
-  .wrapper .story-block #game-intro #get-player-name {
-    display: none; }
-  .wrapper .story-block #game-intro #welcome-player {
-    display: none; }
-  .wrapper .story-block #game-intro .game-rules {
-    display: none; }
-  .wrapper .story-block #game-intro .start-game {
-    display: none; }
+.wrapper {
+  margin-top: 50px; }
+  .wrapper .story-block {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center; }
+    .wrapper .story-block #game-intro #get-player-name {
+      display: none; }
+    .wrapper .story-block #game-intro #welcome-player {
+      display: none; }
+    .wrapper .story-block #game-intro .game-rules {
+      display: none; }
+    .wrapper .story-block #game-intro .start-game {
+      display: none; }
 
 #refusal {
   display: none; }

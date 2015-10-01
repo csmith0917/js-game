@@ -1,3 +1,7 @@
 @mixin hide {
 	display:none;
 }
+
+@mixin text-shadow{
+	text-shadow: 10px 10px 20px $black;
+}
